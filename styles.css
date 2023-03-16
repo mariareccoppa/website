@@ -1,0 +1,171 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+body {
+  background-color: #e5e0f5;
+  font-family: 'New Tegomin', sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+header {
+  background-color: #f9d9d9;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #f9d9d9;
+}
+
+main {
+  margin-top: 100px;
+  padding: 20px;
+}
+
+h1 {
+  font-family: 'New Tegomin', cursive;
+  font-size: 3rem;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'New Tegomin', sans-serif;
+  font-size: 2.3rem;
+  color: #333;
+  margin-top: 40px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+section {
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 40px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+p {
+  font-size: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f9d9d9;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type='submit'] {
+  background-color: #f9d9d9;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type='submit']:hover {
+  background-color: #555;
+  color: #f9d9d9;
+}
+
+section.visible {
+  opacity: 1;
+}
+
+.video-container {
+  margin: 0 auto;
+  width: 560px;
+  text-align: center;
+}
+
+/* Animation styles */
+.header-animation {
+  animation-name: slideDown;
+  animation-duration: 1s;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
